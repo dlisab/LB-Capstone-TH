@@ -113,53 +113,52 @@
 <!-- /signup form -->
 
 <hr>
-<form>
-    <div class="alert alert-info" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-      <strong>Get in Touch.</strong> 
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Get in Touch</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mt-3">
+                <label for="FormControlTextarea1" class="form-label">What type of design are you interested in?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Web Development
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Graphic Design
+                </label>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <h5 class="mb-4">About you!</h5>
-    <div class="form-group">
-      <label class="form-control-label" for="name">Name:</label>
-      <input type="text" class="form-control" id="name">
+  </section>
+<footer class="footer-light bg-warning bg-color warning rows="4"">
+    <div class="col-md-6 mx-auto">
+    <p class = "mt-3"><strong>About Lisa Bridges Design</strong></p>
+    <p>I start by listening and learning about the your needs. I help you think about your audience, your message, and discuss the strategy and budget. I work to creat a unique visual to tell your story.
+    </p>
     </div>
-<div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1">
-  </div>
-  <div class="mt-3">
-    <label for="exampleFormControlTextarea1" class="form-label">What type of design are you interested in?</label>
-  <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-    <label class="form-check-label" for="flexRadioDefault1">
-      Web Development
-    </label>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-    <label class="form-check-label" for="flexRadioDefault2">
-      Graphic Design
-    </label>
-  </div>
-  <div class="mt-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Tell me about your project?</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  </form>
-<div class="row py-4 text-muted">
-    <div class="col-md col-xl-5">
-        <p><strong>About Treehouse</strong></p>
-        <p>Treehouse brings affordable technology education to people everywhere to help them achieve their dreams and change the world.</p>
-    </div>
+</footer>
   <div class="col-md col-xl-5 ml-auto">
-      <p><strong>Stay up-to-date on Full Stack Conf</strong></p>
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Email">
-      <span class="input-group-btn">
-        <button class="btn btn-primary" type="button">Sign up</button>
-      </span>
+  
     </div>
   </div>
 </div> <!-- Optional JavaScript -->
