@@ -65,8 +65,8 @@
                     <p class="card-text">I am a web developer and designer who is passionate about building scalable, beautifully design websites.</p>
                 
                     <h4 class="mb-4">Projects</h4>
-                    <button type="button" class="btn btn-lg btn-warning" id="projectsPopover" data-bs-toggle="popover" data-bs-title="View Projects" data-bs-content="Click to see a list of amazing projects. They're very engaging!">View Projects</button>
-                    
+
+                    <button type="button" class="btn btn-lg btn-warning" data-bs-toggle="popover" title="Popover title" data-bs-placement="bottom" data-bs-content="view projects">View Projects</button>                    
                     <div class="list-group mt-3" id="projectsList" style="display: none;">
                       <a href="file:///Users/lisabridges-new/Sites/TH-%20Project%208-Employee%20Directory/index.html" class="list-group-item list-group-item-action">Employee Directory</a>
                       <a href="file:///Users/lisabridges-new/Sites/Sites/Web%20App%20Dashboard/index.html" class="list-group-item list-group-item-action">Web-App Dashboard</a>
@@ -164,6 +164,34 @@
   
     </div>
   </div>
+   <!--=====================================
+        FORM MODAL
+       =====================================-->
+  <div class="modal fade" id="webdev" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-info text-white">
+          <h5 class="modal-title" id="exampleModalLabel">Projects</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- registration form -->
+          <form>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <strong>Hurry!</strong> Early bird registration ends in two days.
+            </div>
+            <h5 class="mb-4">Basic Info</h5>
+            <div class="list-group mt-3" id="projectsList" style="display: none;">
+              <a href="file:///Users/lisabridges-new/Sites/TH-%20Project%208-Employee%20Directory/index.html" class="list-group-item list-group-item-action">Employee Directory</a>
+              <a href="file:///Users/lisabridges-new/Sites/Sites/Web%20App%20Dashboard/index.html" class="list-group-item list-group-item-action">Web-App Dashboard</a>
+              <a href="file:///Users/lisabridges-new/Sites/Sites/TH-game-show-app/index.html" class="list-group-item list-group-item-action">Gameshow App</a>
+      </div>
+            </div>
 </div> <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
