@@ -74,3 +74,17 @@ function displayProjects(projectData) {
         modalClose.addEventListener('click', () => {
             overlay.classList.add("hidden");
             });
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const img = document.getElementById('svg-image');
+                let angle = 0;
+              
+                function rotate() {
+                  angle += 2;
+                  img.style.transform = `rotate(${angle}deg)`;
+                  requestAnimationFrame(rotate);
+                }
+              
+                rotate();
+              });
