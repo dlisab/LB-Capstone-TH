@@ -76,15 +76,22 @@ function displayProjects(projectData) {
             });
 
 
+            <script>
             document.addEventListener('DOMContentLoaded', function() {
-                const img = document.getElementById('svg-image');
-                let angle = 0;
-              
-                function rotate() {
-                  angle += 2;
-                  img.style.transform = `rotate(${angle}deg)`;
-                  requestAnimationFrame(rotate);
-                }
-              
-                rotate();
+              var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+              var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl);
               });
+            
+              var projectsButton = document.getElementById('projectsPopover');
+              var projectsList = document.getElementById('projectsList');
+            
+              projectsButton.addEventListener('click', function() {
+                if (projectsList.style.display === 'none') {
+                  projectsList.style.display = 'block';
+                } else {
+                  projectsList.style.display = 'none';
+                }
+              });
+            });
+            </script>
