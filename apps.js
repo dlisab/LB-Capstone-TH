@@ -16,16 +16,21 @@
         modalClose.addEventListener('click', () => {
             overlay.classList.add("hidden");
             });
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-    return new bootstrap.Popover(popoverTriggerEl, {
-      html: true,
-      content: function() {
-        return document.getElementById('popover-content').innerHTML;
-      }
-    })
-  })
-});
+    document.addEventListener('DOMContentLoaded', function () {
+        var popoverContent = `
+            <div class="list-group">
+                <a href="file:///Users/lisabridges-new/Sites/TH-%20Project%208-Employee%20Directory/index.html" class="list-group-item list-group-item-action">Employee Directory</a>
+                <a href="file:///Users/lisabridges-new/Sites/Sites/Web%20App%20Dashboard/index.html" class="list-group-item list-group-item-action">Web-App Dashboard</a>
+                <a href="file:///Users/lisabridges-new/Sites/Sites/TH-game-show-app/index.html" class="list-group-item list-group-item-action">Gameshow App</a>
+            </div>
+        `;
+
+        var popover = new bootstrap.Popover(document.getElementById('projectsPopover'), {
+            content: popoverContent,
+            html: true
+        });
+    });
 </script>
