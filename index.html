@@ -36,7 +36,9 @@
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Work
         </a>
-      <div></div>
+      <div>
+
+      </div>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Web Development</a></li>
           <li><a class="dropdown-item" href="#">Book Design</a></li>
@@ -55,7 +57,8 @@
  <div class = "container text-sm-left pt-5">
     <h1 class= "display-4">Lisa</h1>
     <h1 class= "display-4">Bridges</h1>
-    <p id="about" class="pt-4"><strong>FROM PIXELS TO CODE:</strong> I've transformed my passion for visual design into a love for building beautiful, functional websites. 
+    <p id="about" class="pt-4" >
+      <p class="fs-4"><strong>FROM PIXELS TO CODE:</strong> I've transformed my passion for visual design into a love for building beautiful, functional websites. 
         With a background in graphic design and years of experience crafting digital experiences, I bring a unique eye for 
         aesthetics to every web development project. My mission is to create websites that not only look stunning but also 
         deliver seamless user experiences and powerful functionality.
@@ -141,85 +144,101 @@
 
 
 <hr>
-<container class = "text-bg-warning p-3">
-<div class="dropdown">
-  <button type="button" class="btn btn-warning btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-    Get in Touch
-  </button>
-  <form class="dropdown-menu p-4">
-    <div class="mb-3">
-      <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
-    </div>
-    <div class="mb-3">
-      <label for="exampleDropdownFormPassword2" class="form-label">What type of design are you interested in?</label>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          Web Development
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault2">
-          Graphic Design
-        </label>
-    <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea class="form-control" id="message" rows="4" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Send Message</button>
-  </form>
-</div>
-</container>
-  <!--
-      <h2>Form</h2>
-      <form>
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mt-3">
-                <label for="FormControlTextarea1" class="form-label">What type of design are you interested in?</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Web Development
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Graphic Design
-                </label>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
+<div class="card w-100 mb-3">
+  <div class="card-body">
+    <h3 class="card-title">Get in Touch</h3>
+    <p class="card-text">Need help with a project?</p>
+    <div class="dropdown">
+      <button type="button" class="btn btn-warning btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+        Send me a message
+      </button>
+      <form class="dropdown-menu p-4">
+        <div class="mb-3">
+          <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
         </div>
+        <div class="mb-3">
+          <label class="form-label">What type of design are you interested in?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="designType" id="webDevelopment">
+            <label class="form-check-label" for="webDevelopment">
+              Web Development
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="designType" id="graphicDesign">
+            <label class="form-check-label" for="graphicDesign">
+              Graphic Design
+            </label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-md-4 mb-3">
+        <h5>Company Name</h5>
+        <p>A brief description of your company or website.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-md-2 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Services</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-3">
+        <h5>Contact Us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">123 Main St, City, Country</li>
+          <li class="nav-item mb-2">Phone: (123) 456-7890</li>
+          <li class="nav-item mb-2">Email: info@example.com</li>
+        </ul>
+      </div>
+      
+      <!-- Social Media Links -->
+      <div class="col-md-2 mb-3">
+        <h5>Follow Us</h5>
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Facebook</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Twitter</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Instagram</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-<footer class="footer-light bg-warning bg-color warning rows="4"">
-    <div class="col-md-6 mx-auto">
-    <p class = "mt-3"><strong>About Lisa Bridges Design</strong></p>
-    <p>I start by listening and learning about the your needs. I help you think about your audience, your message, and discuss the strategy and budget. I work to creat a unique visual to tell your story.
-    </p>
+    
+    <hr>
+    
+    <!-- Copyright -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+      </div>
     </div>
+  </div>
 </footer>
+</div>
   <div class="col-md col-xl-5 ml-auto">
   
     </div>
-  </div>-->
+  </div>
+</div>
+
    <!--=====================================
         FORM MODAL
        =====================================-->
