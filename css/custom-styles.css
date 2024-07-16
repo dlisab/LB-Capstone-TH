@@ -116,3 +116,8 @@ p {
       #my-svg {
         animation: pulse 2s infinite;
       }
+      
+
+      .about {
+        font-size: large;
+      }
