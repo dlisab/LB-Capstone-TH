@@ -73,11 +73,10 @@
 <div class="container text-sm-left pt-2">
     <div class="row">
         <div class="col-md-4 col-lg-4">
-            <div class="card mb-3">
-              
-                <img class="card-img-top img-fluid py-3" src="images/web-development.jpg" alt="web-development">
-                <div class="card-body">
-                    <h3 class="card-title">Web Development</h3>
+          <div class="card mb-3">
+            <img class="card-img-top img-fluid py-3" src="images/web-development.png" alt="web development">
+            <div class="card-body">
+                <h3 class="card-title">Web Development</h3>
                     <p class="card-text">I am a web developer and designer who is passionate about building scalable, beautifully design websites.</p>
                     <div id="popover-content" style="display: none;">
                       <div class="col-lg order-lg-1">
@@ -89,32 +88,15 @@
                       </div>
                     </div>
                     <h4 class="mb-4">Projects</h4>
+                    <div class="list-group">
+                      <a href="file:///Users/lisabridges-new/Sites/TH-%20Project%208-Employee%20Directory/index.html" class="list-group-item list-group-item-action"><strong>Employee Directory</strong></a>
+                      <a href="file:///Users/lisabridges-new/Sites/Sites/Web%20App%20Dashboard/index.html" class="list-group-item list-group-item-action"><strong>Web-App Dashboard</strong></a>
+                      <a href="file:///Users/lisabridges-new/Sites/Sites/TH-game-show-app/index.html" class="list-group-item list-group-item-action"><strong>Gameshow App</strong></a>
 
-                    <button type="button" class="btn btn-lg btn-warning" data-bs-toggle="popover" title="Popover title" data-bs-placement="bottom" data-bs-content="view projects">View Projects</button>                    
-                    <div id="popover-content" style="display: none;">
-                      
-                      <div class="col-lg order-lg-1">
-                        <h3 class="mb-4">Web Projects</h3>
-                        <div class="list-group">
-                          <a href="file:///Users/lisabridges-new/Sites/TH-%20Project%208-Employee%20Directory/index.html" class="list-group-item list-group-item-action">Employee Directory</a>
-                          <a href="file:///Users/lisabridges-new/Sites/Sites/Web%20App%20Dashboard/index.html" class="list-group-item list-group-item-action">Web-App Dashboard</a>
-                          <a href="file:///Users/lisabridges-new/Sites/Sites/TH-game-show-app/index.html" class="list-group-item list-group-item-action">Gameshow App</a>
-
-                        </div>
-                      </div>
-                      <div class="container mt-5">
-                        <button type="button" class="btn btn-lg btn-danger" 
-                                id="projectsPopover"
-                                data-bs-toggle="popover" 
-                                data-bs-html="true"
-                                title="View Projects">
-                            Click to toggle popover
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
-      </div>
 
         <div class="col-md-4 col-lg-4">
             <div class="card mb-3">
@@ -125,9 +107,9 @@
                 
                 <h4 class="mb-4">Projects</h4>
             <div class="list-group">
-          <a href="file:///Users/lisabridges-new/Sites/TH-%20Project%208-Employee%20Directory/index.html" class="list-group-item list-group-item-action">Employee Directory</a>
-          <a href="file:///Users/lisabridges-new/Sites/Sites/Web%20App%20Dashboard/index.html" class="list-group-item list-group-item-action">Web-App Dashboard</a>
-          <a href="file:///Users/lisabridges-new/Sites/Sites/TH-game-show-app/index.html" class="list-group-item list-group-item-action">Gameshow App</a>
+          <a href="file:///Users/lisabridges-new/Sites/TH-%20Project%208-Employee%20Directory/index.html" class="list-group-item list-group-item-action"><strong>Employee Directory</strong></a>
+          <a href="file:///Users/lisabridges-new/Sites/Sites/Web%20App%20Dashboard/index.html" class="list-group-item list-group-item-action"><strong>Web-App Dashboard</strong></a>
+          <a href="file:///Users/lisabridges-new/Sites/Sites/TH-game-show-app/index.html" class="list-group-item list-group-item-action"><strong>Gameshow App</strong></a>
         </div>
     </div>
   </div>
@@ -153,18 +135,41 @@
 <!-- Web Projects -->
 
 <!--<hr>-->
-<!-- /signup form -->
+<!-- signup form -->
+
+<!-- testing form -->
+
 
 <hr>
 
 <section id="contact" class="py-5 bg-light">
     <div class="container">
-      <script>
-        function openForm() {
-            window.open('form.html', 'FormPopup', 'width=400,height=400');
-            <button onclick="openForm()">Get in Touch</button>
-        }
-    </script>
+
+      <div class="dropdown-menu">
+        <form class="px-4 py-3">
+          <div class="mb-3">
+            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+          </div>
+          <div class="mb-3">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dropdownCheck">
+              <label class="form-check-label" for="dropdownCheck">
+                Remember me
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">New around here? Sign up</a>
+        <a class="dropdown-item" href="#">Forgot password?</a>
+      </div>
+  
       <h2>Form</h2>
       <form>
       <div class="row">
