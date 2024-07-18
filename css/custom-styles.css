@@ -114,3 +114,12 @@ body {
         .transform-image:hover {
           transform: scale(1.1) rotate(5deg);
         }
+
+        .enlarge-on-hover {
+          font-size: 16px; /* Starting font size */
+          transition: font-size 0.3s ease; /* Smooth transition effect */
+        }
+        
+        .enlarge-on-hover:hover {
+          font-size: 20px; /* Larger font size on hover */
+        }
