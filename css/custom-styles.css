@@ -123,4 +123,7 @@ p {
         object-position: center;
         height: 400px; /* Adjust this value as needed */
         margin: auto;
+        padding-left: 10em;
+        padding-right: 10em;
+
       }
