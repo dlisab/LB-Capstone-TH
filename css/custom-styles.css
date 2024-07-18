@@ -93,16 +93,10 @@ h2{
 
 
 p {
-    color:	#5f5f5f;
-    font-size: 1em;
+    font-size: 1.5em;
 }
-.fs-4 {
+
     
-      font-family: "Playwrite NL", cursive;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      font-style: normal;
-    }
 
     hr {
         box-sizing: content-box; 
