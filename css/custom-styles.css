@@ -120,6 +120,6 @@ p {
       .carousel-item img {
         object-fit: contain;
         object-position: center;
-        height: 400px; /* Adjust this value as needed */
+        
         margin: auto;
         }
