@@ -16,3 +16,9 @@
         modalClose.addEventListener('click', () => {
             overlay.classList.add("hidden");
             });
+
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
