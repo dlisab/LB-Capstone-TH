@@ -84,7 +84,7 @@ body {
           font-size: 20px; /* Larger font size on hover */
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 576px) {
           .mobile-menu-spacer {
               height: 60px; /* Adjust based on your menu height */
           }
