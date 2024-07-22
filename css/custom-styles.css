@@ -84,13 +84,9 @@ body {
           font-size: 20px; /* Larger font size on hover */
         }
 
-        @media (max-width: 576px) {
+        @media (max-width: 320px) {
           .mobile-menu-spacer {
               height: 1em; /* Adjust based on your menu height */
           }
       }
-      @media (max-width: 320px) {
-        .pt-4 {
-            padding-top: 7.5rem
-        }
-    }
+      
