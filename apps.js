@@ -15,19 +15,24 @@ gridContainer.addEventListener('click', e => {
         });
 
 
-
-//Include Bootstrap JS 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-// Add this script after the Bootstrap JS -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var dropdowns = document.querySelectorAll('.dropdown-toggle');
-    dropdowns.forEach(function(dropdown) {
-      new bootstrap.Dropdown(dropdown);
-    });
-  });
-</script>
+       
+        
+        <!-- Include Bootstrap CSS (optional) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Include Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- Add this script after the Bootstrap JS -->
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Bootstrap dropdowns
+            var dropdownToggleList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+            var dropdownList = dropdownToggleList.map(function (dropdownToggleEl) {
+              return new bootstrap.Dropdown(dropdownToggleEl);
+            });
+          });
+        </script>
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
