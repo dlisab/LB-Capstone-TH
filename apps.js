@@ -14,17 +14,9 @@ gridContainer.addEventListener('click', e => {
         overlay.classList.add("hidden");
         });
 
-
-       
         
-        <!-- Include Bootstrap CSS (optional) -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        
-        <!-- Include Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        
-        <!-- Add this script after the Bootstrap JS -->
-        <script>
+/* Include Bootstrap CSS (optional)*/
+    
           document.addEventListener('DOMContentLoaded', function() {
             // Initialize Bootstrap dropdowns
             var dropdownToggleList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
@@ -32,7 +24,7 @@ gridContainer.addEventListener('click', e => {
               return new bootstrap.Dropdown(dropdownToggleEl);
             });
           });
-        </script>
+      
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
