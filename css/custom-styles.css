@@ -89,3 +89,8 @@ body {
               height: 1em; /* Adjust based on your menu height */
           }
       }
+      @media (max-width: 320px) {
+        .pt-4 {
+            padding-top: 7.5rem
+        }
+    }
