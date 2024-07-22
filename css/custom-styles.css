@@ -86,6 +86,6 @@ body {
 
         @media (max-width: 576px) {
           .mobile-menu-spacer {
-              height: 60px; /* Adjust based on your menu height */
+              height: 1em; /* Adjust based on your menu height */
           }
       }
