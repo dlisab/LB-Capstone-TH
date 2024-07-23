@@ -7,5 +7,5 @@ document.addEventListener('mousemove', function(event) {
     const b = Math.round((x + y) / 2 * 255);
     
     const color = `rgb(${37}, ${150}, ${190})`;
-    document.getElementById('background').style.backgroundColor = color;
+    document.getElementById('jumbotron').style.backgroundColor = color;
 });
