@@ -13,7 +13,8 @@ gridContainer.addEventListener('click', e => {
     modalClose.addEventListener('click', () => {
         overlay.classList.add("hidden");
         });
-
+//Include Bootstrap CSS (optional)
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         
 /* Include Bootstrap CSS (optional)*/
     
