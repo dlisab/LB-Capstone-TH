@@ -6,6 +6,6 @@ document.addEventListener('mousemove', function(event) {
     const g = Math.round(y * 255);
     const b = Math.round((x + y) / 2 * 255);
     
-    const color = `rgb(${r}, ${g}, ${b})`;
+    const color = `rgb(${37}, ${150}, ${190})`;
     document.getElementById('background').style.backgroundColor = color;
 });
