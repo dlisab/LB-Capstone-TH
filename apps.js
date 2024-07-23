@@ -17,14 +17,12 @@ gridContainer.addEventListener('click', e => {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         
     
-          document.addEventListener('DOMContentLoaded', function() {
-            // Initialize Bootstrap dropdowns
-            var dropdownToggleList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
-            var dropdownList = dropdownToggleList.map(function (dropdownToggleEl) {
-              return new bootstrap.Dropdown(dropdownToggleEl);
-            });
-          });
-      
+  document.addEventListener('DOMContentLoaded', function() {
+    var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+    var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl)
+    })
+})
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
