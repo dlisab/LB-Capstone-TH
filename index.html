@@ -167,10 +167,10 @@
           <h3 id="contact">Get in Touch</h3>
           <p class="card-text">Need help with a project?</p>
           <div class="dropdown">
-            <button type="button" class="btn btn-warning btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+            <button type="button" class="btn btn-warning btn-lg" id="openFormBtn">
               Send me a message
             </button>
-            <form class="dropdown-menu p-4">
+            <form class="dropdown-menu p-4" id="contactForm">
               <div class="mb-3">
                 <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
@@ -194,9 +194,7 @@
                 <label for="message" class="form-label">Message</label>
                 <textarea class="form-control" id="message" rows="4" required></textarea>
               </div>
-              <button type="button" class="btn btn-warning btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                Submit
-              </button>
+              <button type="submit" class="btn btn-warning btn-lg">Submit</button>
             </form>
           </div>
         </div>
