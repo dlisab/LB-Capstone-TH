@@ -99,18 +99,3 @@ body {
         z-index: -1;
     }
 
-.btn btn-success {
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.5s;
-  border-width: 1px;
-  border-color: rgb(212, 247, 36);
-  color: rgb(0, 0, 0);
-}
-
-.btn btn-success:hover {
-  color: white;
-  background-color: #f4623e;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  transition: 0.4s;
-}
